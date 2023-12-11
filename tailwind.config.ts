@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-import { herobg } from "./src/assets"
 
 export default {
   content: [
@@ -23,7 +22,7 @@ export default {
         xs: "450px"
       },
       backgroundImage: {
-        "hero-pattern": `url('${herobg}')`,
+        "hero-pattern": "url('/src/assets/herobg.png')",
       },
     },
   },
