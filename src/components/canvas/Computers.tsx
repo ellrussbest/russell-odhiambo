@@ -8,15 +8,8 @@ const Computers: FC<{ isMobile: boolean}> = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor='white' />
-      <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={1}
-        castShadow
-        shadow-mapSize={1024}
-      />
+      <hemisphereLight intensity={1} groundColor={"violet"} />
+      <ambientLight intensity={1} castShadow/>
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
@@ -32,7 +25,6 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)")
 
     // Set the initial value of the `isMobile` state variable
@@ -59,7 +51,7 @@ const ComputersCanvas = () => {
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
-    >
+    > 
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
