@@ -1,4 +1,7 @@
 import web from "../assets/web.png"
+import mernStack from "../assets/mernStack.png"
+import reactNative from "../assets/reactNative.png"
+import ros from "../assets/ROS.png"
 
 
 export const navLinks = [
@@ -14,23 +17,27 @@ export const navLinks = [
       id: "contact",
       title: "Contact",
     },
+    {
+      id: "download",
+      title: "Download CV"
+    },
   ];
 
   export const services = [
     {
-      title: "Web Developer",
-      icon: web,
+      title: "MERN Stack Developer",
+      icon: mernStack,
     },
     {
       title: "React Native Developer",
+      icon: reactNative,
+    },
+    {
+      title: "Desktop Application Developer",
       icon: web,
     },
     {
-      title: "Backend Developer",
-      icon: web,
-    },
-    {
-      title: "Content Creator",
-      icon: web,
+      title: "Robot Operating System Developer",
+      icon: ros,
     },
   ];

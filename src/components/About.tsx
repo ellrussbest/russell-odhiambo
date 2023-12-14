@@ -4,11 +4,11 @@ import  { FC } from "react"
 
 import { styles } from "../styles";
 import { services } from "../constants";
-import { SectionWrapper } from "../hoc";
+import { SectionWrapper } from "../higherOrderComponent";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard: FC<{index: number, title: string, icon: string}> = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full' 
+  <Tilt className='sm:w-[250px] w-full' 
   options={{
     max: 45,
     scale: 1,
@@ -45,11 +45,12 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I am a proficient Computer Science Masters student with valuable industry exposure. 
+        My expertise spans across a range of programming languages including C++, QML, Python, and Robot Operating System. 
+        I have also delved into the exciting world of web3 development, utilizing Solidity to create innovative applications. 
+        Furthermore, my hands-on experience in Typescript, React, and NodeJs has allowed me to craft dynamic MERN stack applications. 
+        Recently, I have been captivated by the realm of 3D modeling, particularly through the utilization of WebGL and the Three.js library. 
+        I am eager to further explore and leverage this captivating technology to its fullest potential.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
@@ -60,8 +61,6 @@ const About = () => {
     </>
   );
 };
-
-
 
 export default function F(){
   return  (

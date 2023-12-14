@@ -9,7 +9,7 @@ const Computers: FC<{ isMobile: boolean}> = ({ isMobile }) => {
   return (
     <mesh>
       <hemisphereLight intensity={1} groundColor={"violet"} />
-      <ambientLight intensity={1} castShadow/>
+      <ambientLight intensity={1} />
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
@@ -27,18 +27,14 @@ const ComputersCanvas = () => {
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 500px)")
 
-    // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches)
 
-    // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event: MediaQueryListEvent) => {
       setIsMobile(event.matches)
     };
 
-    // Add the callback function as a listener for changes to the media query
     mediaQuery.addEventListener("change", handleMediaQueryChange)
 
-    // Remove the listener when the component is unmounted
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
