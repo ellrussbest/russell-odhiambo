@@ -18,6 +18,9 @@ import python from "../assets/tech/python.png"
 import cpp from "../assets/tech/cpp.png"
 import solidity from "../assets/tech/solidity.png"
 import sql from "../assets/tech/sql.png"
+import bernd from "../assets/bernd.jpeg"
+import florentina from "../assets/florentina.jpeg"
+import anonymous from "../assets/anonymous.png"
 // import git from "../assets/tech/git.png"
 // import redux from "../assets/tech/redux.png"
 // import html from "../assets/tech/html.png"
@@ -244,5 +247,32 @@ export const projects = [
     ],
     image: web,
     source_code_link: "https://github.com/ellrussbest/Blockchain/",
+  },
+];
+
+export const testimonials = [
+  {
+    testimonial:
+      "Bernd's Testimony.",
+    name: "Bernd Langpap",
+    designation: "Software Developer lead",
+    company: "CASCINATION Ag",
+    image: bernd,
+  },
+  {
+    testimonial:
+      "Florentina's Testimony.",
+    name: "Florentina Dubler",
+    designation: "IT Manager",
+    company: "CASCINATION Ag",
+    image: florentina,
+  },
+  {
+    testimonial:
+      "Moses' Testimony",
+    name: "Moses Omollo",
+    designation: "Senior Administrator",
+    company: "CDC/KEMRI",
+    image: anonymous,
   },
 ];
