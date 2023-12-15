@@ -116,40 +116,56 @@ export const experiences = [
 // Programming languages and technologies
 export const technologies = [
   // {
-  //   name: "HTML 5",
-  //   icon: html,
-  // },
-  // {
-  //   name: "CSS 3",
-  //   icon: css,
-  // },
+    //   name: "HTML 5",
+    //   icon: html,
+    // },
+    // {
+      //   name: "CSS 3",
+      //   icon: css,
+      // },
+  {
+    name: "cpp",
+    icon: cpp,
+  },
   {
     name: "JavaScript",
     icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
   },
   {
     name: "Node JS",
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "solidity",
+    icon: solidity,
+  },
+  {
+    name: "qml",
+    icon: qml,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
   },
   {
     name: "Three JS",
     icon: threejs,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "sql",
+    icon: sql,
   },
   {
     name: "figma",
@@ -160,23 +176,73 @@ export const technologies = [
     icon: docker,
   },
   {
-    name: "qml",
-    icon: qml,
-  },
-  {
     name: "python",
     icon: python,
   },
+];
+
+export const projects = [
   {
-    name: "cpp",
-    icon: cpp,
+    name: "Notebook",
+    description:
+      "Online development platform that uses WebAssembly to transpile, bundle and then compile Javascript n real time.",
+    tags: [
+      {
+        name: "React-Typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "WebAssembly",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: web,
+    source_code_link: "https://notebook-hazel.vercel.app/",
   },
   {
-    name: "solidity",
-    icon: solidity,
+    name: "Web3 Marketplace",
+    description:
+      "A Decentralized Marketplace running in Ethereum network that allows users to browse and buy goods while still maintaining their privacy.",
+    tags: [
+      {
+        name: "NextJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Solidity",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: web,
+    source_code_link: "https://marketplace-eth-five.vercel.app/",
   },
   {
-    name: "sql",
-    icon: sql,
+    name: "Blockchain Network",
+    description:
+      "A comprehensive full stack peer-to-peer blockchain network using NodeJs, pub/sub paradign and bitcon-like proof of work consensus algorithm",
+    tags: [
+      {
+        name: "NodeJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Redis",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React-Typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: web,
+    source_code_link: "https://github.com/ellrussbest/Blockchain/",
   },
 ];
