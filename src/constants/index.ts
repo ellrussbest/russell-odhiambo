@@ -185,7 +185,7 @@ export const projects = [
   {
     name: "Notebook",
     description:
-      "Online development platform that uses WebAssembly to transpile, bundle and then compile Javascript n real time.",
+      "Online development platform that uses WebAssembly to transpile, bundle and then compile Javascript in real time.",
     tags: [
       {
         name: "React-Typescript",
