@@ -98,11 +98,11 @@ export const experiences = [
     date: "February 2023 - Februrary 2024",
     points: [
       "I developed a package creator automation software using Python and QML which significantly enhanced the company's operational effieicency.\
-      This software played a vital role in generating essential packages for the client-side application installer and updater,\
+      The software generates essential packages for the client-side application installer and updater,\
       thereby improving company's standard procedures.",
 
-      "I developed FileMaker custom plugin using C++, Javascript and WebAssembly. This plugin was instrumental in generating and storing EEPROM strings\
-      for the comany's medical device firmware thereby enhancing the product's functionality.",
+      "I developed FileMaker custom plugin using C++, Javascript and WebAssembly. The plugin generates and stores EEPROM strings\
+      for the company's medical device firmware thereby enhancing the product's functionality.",
 
       "I played a key role in enhancing the company's operational efficiency by developing and troubleshooting Filemaker applications to help maintain the\
       company's ERP.",

@@ -1,4 +1,4 @@
-import { /*useEffect,*/ useState } from "react"
+import { useState } from "react"
 import { Link } from "react-router-dom"
 
 import { styles } from "../styles"
@@ -6,6 +6,7 @@ import { navLinks } from "../constants"
 import logo from "../assets/logo.png"
 import menu from "../assets/menu.svg"
 import close from "../assets/close.svg"
+import CV from "../assets/CV.pdf"
 
 const Navbar = () => {
   const [active, setActive] = useState("")
@@ -38,7 +39,15 @@ const Navbar = () => {
             className={`${active === link.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
             onClick={() => setActive(link.title)}
             >
+              {link.id === "download" ?
+              <a
+                href={CV}
+                download="Russell_Odhiambo_CV"
+                target="_blank"
+                rel="noreferrer"
+              >{link.title}</a> :
               <a href={`#${link.id}`}>{link.title}</a>
+            }
             </li>)
           }
         </ul>
@@ -69,7 +78,15 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  {
+                    nav.id === "download" ?
+                    <a
+                      href={CV}
+                      download="Russell_Odhiambo_CV"
+                      target="_blank"
+                      rel="noreferrer"
+                    >{nav.title}</a> :
+                    <a href={`#${nav.id}`}>{nav.title}</a>}
                 </li>
               ))}
             </ul>

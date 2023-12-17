@@ -9,7 +9,6 @@ import {
   Navbar, 
   Tech, 
   Works, 
-  StarsCanvas,
 } from "./components"
 
 export default function App() {
@@ -28,7 +27,6 @@ export default function App() {
 
         <div className="relative z-0">
           <Contact />
-          <StarsCanvas />
         </div>
       </div>
     </BrowserRouter>
