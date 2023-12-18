@@ -62,7 +62,7 @@ export const services = [
     icon: web,
   },
   {
-    title: "Robot Operating System Developer",
+    title: "ROS Developer",
     icon: ros,
   },
 ];
@@ -70,6 +70,30 @@ export const services = [
 
 // Work experiences
 export const experiences = [
+  {
+    title: "IT and Software Developer Intern",
+    company_name: "CASCINATION, Bern Switzerland",
+    icon: cascination,
+    iconBg: "green",
+    date: "February 2023 - Februrary 2024",
+    points: [
+      "I developed a package creator automation software using Python and QML which significantly enhanced the company's operational efficiency.\
+      The software generates essential packages for the client-side application installer and updater,\
+      thereby improving the company's standard procedures.",
+
+      "I developed a FileMaker custom plugin using C++, Javascript and WebAssembly. The plugin generates and stores EEPROM strings\
+      for the company's medical device firmware thereby enhancing the product's functionality.",
+
+      "I played a key role in enhancing the company's operational efficiency by developing and troubleshooting Filemaker applications to help maintain the\
+      company's ERP.",
+
+      "I Collaborated with cross-functional teams including designers, product managers, and other developers to create high-quality and regulated software.",
+
+      "I learned and developed Simple ROS (Robot Operating System) application",
+
+      "I contributed to debugging and refactoring of the existing code base.",
+    ],
+  },
   {
     title: "IT Attachee",
     company_name: "KEMRI-CDC, Nairobi Kenya",
@@ -81,37 +105,13 @@ export const experiences = [
       ensuring uninterrupted access to the company's information. This increased the company's \
       efficiency and reliability.",
 
-      "I troubleshot and monitored the company's network using Wireshark.\
+      "I troubleshooted and monitored the company's network using Wireshark.\
       I played a crucial role in identifying and resolving potential issues\
       thus increasing security, minimizing downtime and optimizing network efficiency",
 
       "I automated tasks through Batch and Bash scripting thus increasing operational\
       efficiency and reducing manual effort. This automation optimized workflow process and also minimized the\
-      potential for human error ultimately improving reliablity of the company's system",
-    ],
-  },
-  {
-    title: "IT and Software Developer Intern",
-    company_name: "CASCINATION, Bern Switzerland",
-    icon: cascination,
-    iconBg: "green",
-    date: "February 2023 - Februrary 2024",
-    points: [
-      "I developed a package creator automation software using Python and QML which significantly enhanced the company's operational effieicency.\
-      The software generates essential packages for the client-side application installer and updater,\
-      thereby improving company's standard procedures.",
-
-      "I developed FileMaker custom plugin using C++, Javascript and WebAssembly. The plugin generates and stores EEPROM strings\
-      for the company's medical device firmware thereby enhancing the product's functionality.",
-
-      "I played a key role in enhancing the company's operational efficiency by developing and troubleshooting Filemaker applications to help maintain the\
-      company's ERP.",
-
-      "I Collaborated with cross-functional teams including designers, product managers, and other developers to create high-quality and regulated software.",
-
-      "I learned and developed Simple Robot operating system application",
-
-      "I contributed in debugging and refactoring of the existing code base.",
+      potential for human error ultimately improving reliability of the company's system",
     ],
   },
 ];
